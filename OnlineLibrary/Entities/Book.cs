@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineLibrary
+namespace OnlineLibrary.Entities
 {
     public class Book
     {
@@ -13,7 +13,7 @@ namespace OnlineLibrary
         public string YearRelease { get; set; }
         public string Author { get; set; }
         public string Genre { get; set; }
-        public int BookId { get; set; }
+        public int? UserId { get; set; }
         public User? User { get; set; }
     }
 }
